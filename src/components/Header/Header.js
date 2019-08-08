@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
-import './Header.css';
+import Button from '../Button';
 import { AuthConsumer } from '../../contexts/Auth';
+import './Header.css';
 
 class Header extends PureComponent {
   render() {
