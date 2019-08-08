@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { Fragment, PureComponent } from 'react';
 import SectionTitle from '../SectionTitle';
 import './Layout.css';
 
@@ -31,7 +31,7 @@ class Layout extends PureComponent {
     const renderFooter = this.renderFooter;
 
     return (
-      <div>
+      <Fragment>
         { renderHeader(header) }
         <main
           className={ `main ${header && 'main--with-header'} ${footer && 'main--with-footer'}` }
@@ -40,7 +40,7 @@ class Layout extends PureComponent {
           { children }
         </main>
         { renderFooter(footer) }
-      </div>
+      </Fragment>
     );
   }
 }

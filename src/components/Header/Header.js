@@ -7,8 +7,8 @@ class Header extends PureComponent {
   render() {
     return (
       <AuthConsumer>
-        {({ isAuthorised, email, logout }) =>
-          isAuthorised
+        {({ isAuthorized, email, logout }) =>
+          isAuthorized
           ? (
             <div className="header__content">
               <div className="header-menu">
@@ -16,7 +16,7 @@ class Header extends PureComponent {
                   { email }
                 </p>
                 <Button
-                  onClick={ logout }
+                  onClick={logout}
                   className="header-menu__button t-logout"
                 >
                   Выйти
